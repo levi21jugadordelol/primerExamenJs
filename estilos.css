@@ -74,6 +74,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .imagen img {
@@ -118,5 +119,18 @@ main {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  display: none; /* Inicialmente oculta */
+  display: none;
+}
+
+.container_footer_imagen i {
+  font-size: 2rem;
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 1em 0;
 }
