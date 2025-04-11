@@ -36,7 +36,7 @@ header {
 .cabezera_fecha {
   margin-top: 0.5em;
   width: 45%;
-  background-color: rgba(73, 73, 73, 0.589);
+  background-color: rgba(138, 133, 133, 0.589);
   height: 50%;
   border-radius: 5rem;
   margin-left: 0.5rem;
@@ -45,7 +45,7 @@ header {
 .cabezera_hora {
   margin-top: 0.5em;
   width: 45%;
-  background-color: rgba(73, 73, 73, 0.589);
+  background-color: rgba(138, 133, 133, 0.589);
   height: 50%;
   margin-left: 80px;
   border-radius: 5rem;
@@ -69,21 +69,54 @@ main {
   margin-top: 0.8em;
 }
 
-.imagen1,
-.imagen2,
-.imagen3 {
+.imagen {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.imagen1 img,
-.imagen2 img,
-.imagen3 img {
+.imagen img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 2px solid black;
   border-radius: 8px;
+}
+
+/*activando el active para el carrusel*/
+.container_carrusel {
+  overflow: hidden;
+  position: relative;
+}
+
+.container_carrusel .col-4 {
+  transition: transform 0.5s ease;
+}
+
+.cabezera_fecha,
+.cabezera_hora {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.leyenda {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 5px;
+  margin-top: 5px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  display: none; /* Inicialmente oculta */
 }
