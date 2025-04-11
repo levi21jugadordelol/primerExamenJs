@@ -1,6 +1,89 @@
 body {
+  position: relative;
   background-image: url(./imagenes/fondoMain.jpg);
   background-position: 10% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  backdrop-filter: blur(2px);
+}
+
+header {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.cabezera {
+  height: 60%;
+  width: 100vw;
+  margin-top: 0.5em;
+  margin: 0;
+  padding: 0;
+}
+
+.cabezera_titulo {
+  height: 40%;
+  color: rgb(84, 134, 192);
+}
+
+.cabezera_fecha {
+  margin-top: 0.5em;
+  width: 45%;
+  background-color: rgba(73, 73, 73, 0.589);
+  height: 50%;
+  border-radius: 5rem;
+  margin-left: 0.5rem;
+}
+
+.cabezera_hora {
+  margin-top: 0.5em;
+  width: 45%;
+  background-color: rgba(73, 73, 73, 0.589);
+  height: 50%;
+  margin-left: 80px;
+  border-radius: 5rem;
+}
+
+main {
+  height: 70vh;
+}
+
+.banner {
+  height: 100%;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container_carrusel {
+  margin-top: 0.8em;
+}
+
+.imagen1,
+.imagen2,
+.imagen3 {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen1 img,
+.imagen2 img,
+.imagen3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 8px;
 }
